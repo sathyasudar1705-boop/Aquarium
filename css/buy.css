@@ -1,0 +1,72 @@
+body {
+  background-color: black;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  border: 2px solid rgb(157, 129, 129);
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  padding: 40px;
+}
+.box1 {
+  grid-column-start: 1;
+  grid-row: 1 / 4;
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 255, 247);
+  font-size: 27px;
+}
+.box2 {
+  background-color: black;
+}
+.confirm-message {
+  display: none;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 170px;
+}
+#button:checked ~ .confirm-message {
+  display: block;
+}
+.buy-button {
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 20px;
+  background-color: #f8055e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 170px;
+  margin-top: 30px;
+}
+.buy-button:hover {
+  color: rgb(0, 21, 253);
+}
+
+input[type="checkbox"] {
+  display: none; /* hide the checkbox */
+}
+.h1 {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.h2 a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.h2 a:hover {
+  color: rgb(255, 0, 115);
+}
+h1 {
+  color: rgb(106, 0, 255);
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+}

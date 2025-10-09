@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/buy.css" />
+  </head>
+  <body>
+    <h1>The Aqua Store</h1>
+    <div class="container">
+      <div class="box1">
+        <form action="login" method="get/post">
+          <label for="fname">Name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="products">Choose a food:</label>
+          <select id="food" name="foods">
+            <option value="Big Size Nets">Big Size Nets</option>
+            <option value="small size nets">Small size nets</option></select
+          ><br /><br />
+          <label for="District">District:</label>
+          <select id="District" name="District">
+            <option value="Chennai">Chennai</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="theni">Theni</option></select
+          ><br /><br />
+          <div>
+            Location:
+            <textarea name="message" rows="1" cols="40">
+Enter your location....</textarea
+            >
+          </div>
+          <br />
+          <label for="phone">Number:</label>
+          <input type="tel" id="phone" name="phone" /><br /><br />
+        </form>
+      </div>
+      <div class="box2">
+        <input type="checkbox" id="button" />
+        <label for="button" class="buy-button">Buy Now</label>
+        <div class="confirm-message">✅ Your Order is Placed!</div>
+      </div>
+    </div>
+    <h1 class="h2"><a href="index.html">Back to Home</a></h1>
+  </body>
+</html>
