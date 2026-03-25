@@ -3,48 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Order Garden Setup — The Aqua Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/buy.css" />
   </head>
   <body>
-    <h1>The Aqua Store</h1>
-    <div class="container">
-      <div class="box1">
-        <form action="login" method="get/post">
-          <label for="fname">Name:</label>
-          <input type="text" id="fname" name="fname" /><br /><br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" /><br /><br />
-          <label for="products">Choose a food:</label>
-          <select id="food" name="foods">
-            <option value="House setup">House setup</option>
-            <option value="Puddha setup">Puddha setup</option>
-            <option value="Dark River setup">Dark River setup</option>
-            <option value="River Setup">River Setup</option></select
-          ><br /><br />
-          <label for="District">District:</label>
-          <select id="District" name="District">
-            <option value="Chennai">Chennai</option>
-            <option value="Tirunelveli">Tirunelveli</option>
-            <option value="theni">Theni</option></select
-          ><br /><br />
-          <div>
-            Location:
-            <textarea name="message" rows="1" cols="40">
-Enter your location....</textarea
-            >
+    <header class="page-header">
+      <a href="../index.html" class="page-header__title">THE AQUA STORE</a>
+      <nav class="page-header__nav">
+        <a href="../index.html" class="page-header__link">Home</a>
+        <a href="garden.html" class="page-header__link">Gardens</a>
+        <a href="shops.html" class="page-header__link">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1 class="section-title">Order Garden Setup</h1>
+
+      <div class="order-section">
+        <div class="order-card glass-card">
+          <p class="order-card__title">Fill in your details to place the order</p>
+          <form class="order-form" action="#" method="get">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="food">Choose a Setup</label>
+              <select id="food" name="foods">
+                <option value="House setup">House Setup</option>
+                <option value="Buddha setup">Buddha Setup</option>
+                <option value="Dark River setup">Dark River Setup</option>
+                <option value="River Setup">River Setup</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="district">District</label>
+              <select id="district" name="district">
+                <option value="Chennai">Chennai</option>
+                <option value="Tirunelveli">Tirunelveli</option>
+                <option value="Theni">Theni</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <textarea id="location" name="location" rows="2" placeholder="Enter your delivery address..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" />
+            </div>
+          </form>
+          <div class="order-actions">
+            <input type="checkbox" id="orderBtn" class="order-checkbox" />
+            <label for="orderBtn" class="order-buy-btn">Place Order</label>
+            <div class="order-confirm">✅ Your order has been placed successfully!</div>
           </div>
-          <br />
-          <label for="phone">Number:</label>
-          <input type="tel" id="phone" name="phone" /><br /><br />
-        </form>
+        </div>
       </div>
-      <div class="box2">
-        <input type="checkbox" id="button" />
-        <label for="button" class="buy-button">Buy Now</label>
-        <div class="confirm-message">✅ Your Order is Placed!</div>
-      </div>
-    </div>
-    <h1 class="h2"><a href="../index.html">Back to Home</a></h1>
+
+      <a href="../index.html" class="back-link">← Back to Home</a>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__text">&copy; 2025 Aquarium.&reg; — <a href="../index.html">Home</a></p>
+    </footer>
   </body>
 </html>

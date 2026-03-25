@@ -3,40 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Aquarium</title>
+    <title>Full Aquarium Setup — The Aqua Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/product.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="box no1">
-        <img src="../Assets/full auqa setup.jpg" width="980px" height="400px" />
-      </div>
-      <div class="box no2">
-        <div class="no3">
-          <h1 class="head">Full Aquarium setup</h1>
-          <h4>Components</h4>
-          <div>
-            <li>Gardens</li>
-            <li>Sea shells</li>
-            <li>colorful Stones</li>
-            <li>Motors</li>
-            <li>Lighting Setup</li>
-            <li>2 gold fish free</li>
-          </div>
+    <header class="page-header">
+      <a href="../index.html" class="page-header__title">THE AQUA STORE</a>
+      <nav class="page-header__nav">
+        <a href="../index.html" class="page-header__link">Home</a>
+        <a href="read1.html" class="page-header__link">Learn</a>
+        <a href="stones.html" class="page-header__link">Products</a>
+        <a href="product.html" class="page-header__link">Featured</a>
+        <a href="shops.html" class="page-header__link">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1 class="section-title">Featured Product</h1>
+
+      <div class="product-detail glass-card">
+        <div class="product-detail__img-wrap">
+          <img src="../Assets/full auqa setup.jpg" alt="Full Aquarium Setup" class="product-detail__img" />
         </div>
-        <div class="no4">
-          <h4>
+        <div class="product-detail__info">
+          <h2 class="product-detail__name">Full Aquarium Setup</h2>
+          <div class="product-detail__components">
+            <h3 class="product-detail__sub">What's Included</h3>
+            <ul class="product-detail__list">
+              <li>Gardens</li>
+              <li>Sea Shells</li>
+              <li>Colorful Stones</li>
+              <li>Motors</li>
+              <li>Lighting Setup</li>
+              <li>2 Gold Fish Free</li>
+            </ul>
+          </div>
+          <p class="product-detail__desc">
             This is a full aquarium setup. If you buy this, we will come to your
             house and install the entire setup for you. You can also customize
             it as per your preference. This is a base variant.
-          </h4>
-          <p><strong>Size: </strong>M</p>
-          <p><strong>Stocks: </strong>Available</p>
-          <span class="price">Rs.1899 only</span><br /><br />
-          <a href="productbuy.html" class="button">Order Now</a>
+          </p>
+          <div class="product-detail__meta">
+            <span class="product-detail__tag">Size: M</span>
+            <span class="product-detail__tag product-detail__tag--green">In Stock</span>
+          </div>
+          <p class="product-detail__price">₹1,899 <span>only</span></p>
+          <a href="productbuy.html" class="btn btn--primary btn--lg">Order Now</a>
         </div>
       </div>
-    </div>
-    <h1 class="h2"><a href="../index.html">Back to Home</a></h1>
+
+      <a href="../index.html" class="back-link">← Back to Home</a>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__text">&copy; 2025 Aquarium.&reg; — <a href="../index.html">Home</a></p>
+    </footer>
   </body>
 </html>

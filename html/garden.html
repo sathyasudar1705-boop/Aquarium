@@ -3,57 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Aquarium</title>
-    <link rel="stylesheet" href="../css/garden.css"/>
+    <title>Garden Setups — The Aqua Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/garden.css" />
   </head>
-  </head>
-  <body class="body">
-    <div class="container">
-      <div class="box no1">
-        <h1 class="h1">House setup</h1>
-        <image
-          src="../Assets/garden1.jpg"
-          alt="food"
-          width="350px"
-          height="230px"
-        ></image>
-        <p>Only Rs.1500</p>
-        <a href="gardenbuy.html" class="button">Order Now</a>
+  <body>
+    <header class="page-header">
+      <a href="../index.html" class="page-header__title">THE AQUA STORE</a>
+      <nav class="page-header__nav">
+        <a href="../index.html" class="page-header__link">Home</a>
+        <a href="read1.html" class="page-header__link">Learn</a>
+        <a href="stones.html" class="page-header__link">Products</a>
+        <a href="product.html" class="page-header__link">Featured</a>
+        <a href="shops.html" class="page-header__link">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1 class="section-title">🌿 Garden Setups</h1>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="../Assets/garden1.jpg" alt="House setup garden" class="product-card__img" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__name">House Setup</h2>
+            <p class="product-card__price">₹1,500</p>
+            <a href="gardenbuy.html" class="btn btn--primary">Order Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="../Assets/garden2.jpg" alt="Buddha setup garden" class="product-card__img" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__name">Buddha Setup</h2>
+            <p class="product-card__price">₹2,000</p>
+            <a href="gardenbuy.html" class="btn btn--primary">Order Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="../Assets/garden3.jpg" alt="Dark River setup garden" class="product-card__img" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__name">Dark River Setup</h2>
+            <p class="product-card__price">₹1,650</p>
+            <a href="gardenbuy.html" class="btn btn--primary">Order Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="../Assets/garden4.jpg" alt="River setup garden" class="product-card__img" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__name">River Setup</h2>
+            <p class="product-card__price">₹1,050</p>
+            <a href="gardenbuy.html" class="btn btn--primary">Order Now</a>
+          </div>
+        </div>
       </div>
-      <div class="box no2">
-        <h1 class="h1">Buddha setup</h1>
-        <image
-          src="../Assets/garden2.jpg"
-          alt="food"
-          width="350px"
-          height="230px"
-        ></image>
-        <p>Only Rs.2000</p>
-         <a href="gardenbuy.html" class="button">Order Now</a>
-      </div>
-      <div class="box no3">
-        <h1 class="h1">Dark River setup</h1>
-        <image
-          src="../Assets/garden3.jpg"
-          alt="food"
-          width="350px"
-          height="230px"
-        ></image>
-        <p>Only Rs.1650</p>
-         <a href="gardenbuy.html" class="button">Order Now</a>
-      </div>
-      <div class="box no4">
-        <h1 class="h1">River Setup</h1>
-        <image
-          src="../Assets/garden4.jpg"
-          alt="food"
-          width="350px"
-          height="230px"
-        ></image>
-        <p>Only Rs.1050</p>
-        <a href="gardenbuy.html" class="button">Order Now</a>
-      </div>
-    </div>
-    <h1 class="h2"><a href="../index.html">Back to Home</a></h1>
+
+      <a href="../index.html" class="back-link">← Back to Home</a>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__text">&copy; 2025 Aquarium.&reg; — <a href="../index.html">Home</a></p>
+    </footer>
   </body>
 </html>

@@ -1,56 +1,71 @@
-.container {
+/* Read 2 — re-uses read1.css layout identically */
+/* Read Pages — article + aside layout */
+
+.read-layout {
   display: grid;
-  width: 1000px;
-  height: 600px;
-  background-color: black;
-  padding: 40px;
-  margin: 1px;
-  margin-left: 200px;
-  margin-top: 100px;
-  border: 2px solid;
-  border-color: antiquewhite;
-  border-radius: 20px;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.r1 {
-  grid-column-start: 1;
-  background-color: rgb(209, 255, 234);
-  text-align: center;
-  font-size: 15px;
-  padding: 5px;
-  border: 2px solid;
-  border-color: rgb(242, 100, 174);
-  border-radius: 10px;
+
+.read-article {
+  padding: 2.5rem;
 }
-.r2 {
-  grid-column-start: 2;
-  background-color: antiquewhite;
-  height: 390px;
-  margin-top: 110px;
-  text-align: center;
+
+.read-article p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #c0c8d8;
+  margin-bottom: 1.2rem;
 }
-#font {
-  color: rgb(209, 0, 42);
+
+.read-article p:first-child::first-letter {
+  font-size: 2.5rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  color: #ff4757;
+  float: left;
+  margin-right: 0.4rem;
+  line-height: 1;
 }
-.home {
-  font-size: 30px;
-  text-decoration: none;
-  color: white;
+
+.read-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-.home:hover {
-  color: blue;
+
+.read-aside__img-wrap {
+  overflow: hidden;
+  border-radius: 1.25rem;
 }
-.body {
-  background-color: rgb(0, 0, 0);
+
+.read-aside__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  transition: transform 0.5s ease;
 }
-.next {
-  text-decoration: none;
-  margin-left: 300px;
-  font-size: 30px;
-  text-decoration: none;
-  color: white;
+
+.read-aside__img-wrap:hover .read-aside__img {
+  transform: scale(1.05);
 }
-.next:hover {
-  color: blue;
+
+.read-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .read-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .read-article {
+    padding: 1.5rem;
+  }
 }

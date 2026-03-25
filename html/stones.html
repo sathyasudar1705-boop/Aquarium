@@ -3,56 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Aquarium</title>
+    <title>Stones &amp; Substrates — The Aqua Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/stones.css" />
   </head>
-  <body class="body">
-    <div class="container">
-      <div class="box no1">
-        <h1 class="h1">Sand Type</h1>
-        <image
-          src="../Assets/stones1.jpg"
-          alt="food"
-          width="350px"
-          height="230px"
-        ></image>
-        <p>1/2 kg - Rs.100</p>
-        <a href="stonesbuy.html" class="button">Order Now</a>
+  <body>
+    <header class="page-header">
+      <a href="../index.html" class="page-header__title">THE AQUA STORE</a>
+      <nav class="page-header__nav">
+        <a href="../index.html" class="page-header__link">Home</a>
+        <a href="read1.html" class="page-header__link">Learn</a>
+        <a href="stones.html" class="page-header__link">Products</a>
+        <a href="product.html" class="page-header__link">Featured</a>
+        <a href="shops.html" class="page-header__link">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <h1 class="section-title">🪨 Stones &amp; Substrates</h1>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="../Assets/stones1.jpg" alt="Sand Type Stones" class="product-card__img" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__name">Sand Type</h2>
+            <p class="product-card__price">½ kg — ₹100</p>
+            <a href="stonesbuy.html" class="btn btn--primary">Order Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="../Assets/stones2.jpg" alt="Transparent Type Stones" class="product-card__img" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__name">Transparent Type</h2>
+            <p class="product-card__price">½ kg — ₹150</p>
+            <a href="stonesbuy.html" class="btn btn--primary">Order Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="../Assets/stones3.jpg" alt="Glassy Type Stones" class="product-card__img" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__name">Glassy Type</h2>
+            <p class="product-card__price">½ kg — ₹130</p>
+            <a href="stonesbuy.html" class="btn btn--primary">Order Now</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img-wrap">
+            <img src="../Assets/stones5.jpg" alt="Sea Shells" class="product-card__img" />
+          </div>
+          <div class="product-card__body">
+            <h2 class="product-card__name">Sea Shells</h2>
+            <p class="product-card__price">½ kg — ₹250</p>
+            <a href="stonesbuy.html" class="btn btn--primary">Order Now</a>
+          </div>
+        </div>
       </div>
-      <div class="box no2">
-        <h1 class="h1">Transperant Type</h1>
-        <image
-          src="../Assets/stones2.jpg"
-          alt="food"
-          width="350px"
-          height="230px"
-        ></image>
-        <p>1/2 kg - Rs.150</p>
-        <a href="stonesbuy.html" class="button">Order Now</a>
-      </div>
-      <div class="box no3">
-        <h1 class="h1">Glassy Type</h1>
-        <image
-          src="../Assets/stones3.jpg"
-          alt="food"
-          width="350px"
-          height="230px"
-        ></image>
-        <p>1/2 kg - Rs.130</p>
-        <a href="stonesbuy.html" class="button">Order Now</a>
-      </div>
-      <div class="box no4">
-        <h1 class="h1">Sea Shells</h1>
-        <image
-          src="../Assets/stones5.jpg"
-          alt="food"
-          width="350px"
-          height="230px"
-        ></image>
-        <p>1/2 kg - Rs.250</p>
-        <a href="stonesbuy.html" class="button">Order Now</a>
-      </div>
-    </div>
-    <h1 class="h2"><a href="../index.html">Back to Home</a></h1>
+
+      <a href="../index.html" class="back-link">← Back to Home</a>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__text">&copy; 2025 Aquarium.&reg; — <a href="../index.html">Home</a></p>
+    </footer>
   </body>
 </html>

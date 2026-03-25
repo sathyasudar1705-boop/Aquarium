@@ -1,102 +1,132 @@
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: rgb(0, 0, 0);
-  width: 1000px;
-  height: 900px;
-  margin-left: 230px;
-  border: 2px solid;
-  border-color: rgb(251, 174, 199);
-  border-radius: 20px;
-}
-.no1 {
-  grid-column-start: 1;
-  grid-row: 1 / 2;
-  background-color: rgb(0, 0, 0);
-  margin: 10px;
-  border-radius: 20px;
-  text-align: center;
-}
-.no2 {
-  grid-row: 2 / 5;
+/* Product Detail Page Styles */
+
+.product-detail {
+  max-width: 1000px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: aqua;
-  margin: 10px;
-  border-radius: 20px;
+  overflow: hidden;
 }
-.no3 {
-  grid-column-start: 1;
-  background-color: rgb(0, 0, 0);
-  font-size: 30px;
-  color: rgb(195, 0, 255);
+
+.product-detail__img-wrap {
+  overflow: hidden;
 }
-.no4 {
-  grid-column-start: 2;
-  background-color: rgb(0, 0, 0);
-  font-size: 24px;
-  text-align: center;
-  color: white;
+
+.product-detail__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.25rem 0 0 1.25rem;
+  transition: transform 0.5s ease;
 }
-body {
-  background-color: black;
+
+.product-detail:hover .product-detail__img {
+  transform: scale(1.04);
 }
-img {
-  border-radius: 15px;
+
+.product-detail__info {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
-.head {
-  font-size: 40px;
-  margin-left: 30px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: red;
+
+.product-detail__name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e8edf5;
 }
-li {
-  color: beige;
-  margin-left: 30px;
+
+.product-detail__sub {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff4757;
+  margin-bottom: 0.5rem;
 }
-.buy {
-  display: block;
-  padding: 10px;
-  width: 180px;
-  height: 40px;
-  background: #3956f5;
-  border-radius: 8px;
-  transition: 0.2s;
-  font-size: 28px;
-  margin-left: 150px;
-  margin-top: 60px;
+
+.product-detail__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
-a {
-  text-decoration: none;
-  color: white;
+
+.product-detail__list li {
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: rgba(255, 71, 87, 0.1);
+  color: #8892a6;
+  border: 1px solid rgba(255, 71, 87, 0.15);
 }
-strong {
-  color: rgb(82, 96, 251);
-  font-size: 30px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+
+.product-detail__desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #8892a6;
 }
-span {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(252, 195, 82);
+
+.product-detail__meta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
-.h2 a {
-  color: rgb(255, 255, 255);
-  margin-left: 650px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+
+.product-detail__tag {
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(255, 71, 87, 0.12);
+  color: #ff4757;
 }
-.h2 a:hover {
-  color: #ff1395;
+
+.product-detail__tag--green {
+  background: rgba(6, 214, 160, 0.12);
+  color: #06d6a0;
 }
-.button {
-  text-decoration: none;
-  color: white;
-  background-color: rgb(253, 34, 154);
-  padding: 13px;
-  border-radius: 15px;
+
+.product-detail__price {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffd166;
 }
-.button:hover {
-  color: blue;
+
+.product-detail__price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #8892a6;
+}
+
+.btn--lg {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .product-detail__img {
+    border-radius: 1.25rem 1.25rem 0 0;
+    max-height: 300px;
+  }
+
+  .product-detail__info {
+    padding: 1.5rem;
+  }
+
+  .product-detail__name {
+    font-size: 1.4rem;
+  }
+
+  .product-detail__price {
+    font-size: 1.8rem;
+  }
 }

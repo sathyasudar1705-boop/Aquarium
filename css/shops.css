@@ -1,55 +1,58 @@
-body {
-  background-color: black;
-}
-.container {
+/* Shops Page Styles */
+
+.shops-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  background-color: rgb(0, 0, 0);
-  width: 1100px;
-  height: 850px;
-  margin-left: 190px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-.no1 {
-  grid-column-start: 1;
-  margin: 5px;
-  border-right: 5px dotted rgb(38, 186, 249);
-  text-align: right;
+
+.shop-card {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.no2 {
-  grid-column-start: 1;
-  border-left: 5px dotted rgb(218, 43, 241);
-  margin: 5px;
+
+.shop-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(255, 71, 87, 0.12);
 }
-.no3 {
-  grid-column-start: 1;
-  border-right: 5px dotted rgb(38, 249, 52);
-  margin: 5px;
-  text-align: right;
+
+.shop-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
-.text {
-  font-size: 50px;
-  font-family: cursive;
-  font-style: italic;
-  color: rgb(255, 24, 109);
-  margin-right: 30px;
-  margin-left: 30px;
+
+.shop-card__city {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4757;
+  margin-bottom: 1rem;
 }
-p {
-  color: beige;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-style: italic;
-  font-size: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+.shop-card__address {
+  color: #e8edf5;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
 }
-a {
-  text-decoration: none;
-  margin-left: 100px;
-  font-size: 30px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+
+.shop-card__phone {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ffd166;
+  margin-bottom: 0.4rem;
 }
-a:hover {
-  color: rgb(247, 36, 74);
+
+.shop-card__pin {
+  color: #8892a6;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .shops-grid {
+    grid-template-columns: 1fr;
+  }
 }

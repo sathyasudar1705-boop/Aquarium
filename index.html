@@ -1,186 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>The Aquarium</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Aqua Store — Premium Aquascaping Supplies</title>
+    <meta name="description" content="Discover premium aquascaping supplies, fish food, garden decorations, fishnets, motors, and stones at The Aqua Store. 24-hour dispatch on all orders." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/index.css" />
-    <style></style>
   </head>
-  <body class="body">
-    <header class="nav">
-      <image
-        src="./Assets/Gemini_Generated_Image_pkrc1wpkrc1wpkrc-removebg-preview.png"
-        alt="fish"
-        width="180"
-        height="180"
-      ></image>
-      <h1 id="heading">THE AQUA STORE</h1>
+  <body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <svg class="header__logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Fish body -->
+            <ellipse cx="30" cy="32" rx="22" ry="14" fill="url(#fishGrad)" />
+            <!-- Tail -->
+            <path d="M50 32 L62 20 L62 44 Z" fill="url(#tailGrad)" />
+            <!-- Eye -->
+            <circle cx="18" cy="28" r="3.5" fill="#0a0e1a" />
+            <circle cx="19" cy="27" r="1.2" fill="#fff" />
+            <!-- Top fin -->
+            <path d="M28 18 Q32 8 38 18" fill="#c0392b" opacity="0.8" />
+            <!-- Bottom fin -->
+            <path d="M28 46 Q32 54 36 46" fill="#c0392b" opacity="0.6" />
+            <!-- Gill line -->
+            <path d="M22 24 Q20 32 22 40" stroke="#0a0e1a" stroke-width="1.5" fill="none" opacity="0.3" />
+            <defs>
+              <linearGradient id="fishGrad" x1="8" y1="18" x2="52" y2="46">
+                <stop offset="0%" stop-color="#ff4757" />
+                <stop offset="100%" stop-color="#c0392b" />
+              </linearGradient>
+              <linearGradient id="tailGrad" x1="50" y1="20" x2="62" y2="44">
+                <stop offset="0%" stop-color="#c0392b" />
+                <stop offset="100%" stop-color="#ff4757" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <h1 class="header__title">THE AQUA STORE</h1>
+        </div>
+        <!-- hamburger for mobile -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <nav class="nav">
+          <a href="index.html" class="nav__link nav__link--active">Home</a>
+          <a href="./html/read1.html" class="nav__link">Learn</a>
+          <a href="./html/stones.html" class="nav__link">Products</a>
+          <a href="./html/product.html" class="nav__link">Featured</a>
+          <a href="./html/shops.html" class="nav__link">Contact</a>
+        </nav>
+      </div>
     </header>
-    <nav class="navigation" style="text-align: center">
-      <a href="index.html">Home</a>
-      <a href="./html/read1.html">Learn</a>
-      <a href="./html/stones.html">Products</a>
-      <a href="./html/product.html">Featured Product</a>
-      <a href="./html/shops.html">Contact Us</a>
-    </nav>
-    <br />
-    <div class="aqua-video">
-      <video
-        autoplay
-        muted
-        loop
-        id="myVideo"
-        src="Assets/video.mp4"
-        width="1450"
-      ></video>
-    </div>
-    <br />
-    <div class="container">
-      <div class="block1 a1">
-        <h3
-          style="
-            color: rgb(123, 0, 255);
-            font-size: 19px;
-            font-family: Arial, Helvetica, sans-serif;
-          "
-        >
-          Learn about Aquascaping
-        </h3>
-        <p>What is Aquascaping?</p>
-        <a class="here" href="html/read1.html">Click here</a>
-        <p>Aquascaping Hardware and Natural Elements?</p>
-        <a class="here" href="html/read2.html">Click here</a>
-        <p>Other Tips and Suggestions Regarding Aquascaping Compositons!</p>
-        <a class="here" href="html/read3.html">Click here</a>
+
+    <!-- ===== HERO VIDEO ===== -->
+    <section class="hero" id="hero">
+      <video autoplay muted loop playsinline class="hero__video" src="Assets/video.mp4"></video>
+      <div class="hero__overlay">
+        <h2 class="hero__heading">Dive Into The World Of Aquascaping</h2>
+        <p class="hero__sub">Premium supplies for every aquarist</p>
+        <a href="./html/stones.html" class="btn btn--primary">Explore Products</a>
       </div>
-      <div class="block1 a2">
-        <video
-          src="Assets/aqua video.mp4"
-          alt="aqua"
-          width="470"
-          height="260"
-          controls
-        ></video>
+    </section>
+
+    <!-- ===== LEARN SECTION ===== -->
+    <section class="section learn" id="learn">
+      <h2 class="section__title">Learn Aquascaping</h2>
+      <div class="learn__grid">
+        <div class="learn__card glass-card">
+          <span class="learn__icon">🌿</span>
+          <h3 class="learn__card-title">What is Aquascaping?</h3>
+          <p class="learn__card-text">Discover the art of arranging aquatic plants, rocks, and wood in an aesthetically pleasing manner.</p>
+          <a class="btn btn--outline" href="html/read1.html">Read More</a>
+        </div>
+        <div class="learn__card glass-card">
+          <span class="learn__icon">🪨</span>
+          <h3 class="learn__card-title">Hardware &amp; Elements</h3>
+          <p class="learn__card-text">Explore essential hardware and natural materials needed for stunning aquascapes.</p>
+          <a class="btn btn--outline" href="html/read2.html">Read More</a>
+        </div>
+        <div class="learn__card glass-card">
+          <span class="learn__icon">💡</span>
+          <h3 class="learn__card-title">Tips &amp; Compositions</h3>
+          <p class="learn__card-text">Pro tips and composition techniques to elevate your underwater landscape.</p>
+          <a class="btn btn--outline" href="html/read3.html">Read More</a>
+        </div>
       </div>
-    </div>
-    <h2 class="collections font">Our collections:</h2>
-    <div class="container3">
-      <div class="block s1" href="../Aquarium/../html/food.html">
-        <a href="food.html"
-          ><image
-            src="Assets/food1.png"
-            alt="food"
-            width="230px"
-            height="230px"
-            >Food</image
-          ></a
-        >
+    </section>
+
+    <!-- ===== COLLECTIONS ===== -->
+    <section class="section collections" id="collections">
+      <h2 class="section__title">Our Collections</h2>
+      <div class="collections__grid">
+        <a href="food.html" class="collection-card">
+          <img src="Assets/food1.png" alt="Fish Food" class="collection-card__img" />
+          <div class="collection-card__overlay">
+            <span class="collection-card__name">Food</span>
+          </div>
+        </a>
+        <a href="html/garden.html" class="collection-card">
+          <img src="Assets/garden.jpg" alt="Garden Decorations" class="collection-card__img" />
+          <div class="collection-card__overlay">
+            <span class="collection-card__name">Gardens</span>
+          </div>
+        </a>
+        <a href="html/fishnet.html" class="collection-card">
+          <img src="Assets/net.jpg" alt="Fishnets" class="collection-card__img" />
+          <div class="collection-card__overlay">
+            <span class="collection-card__name">Fishnets</span>
+          </div>
+        </a>
+        <a href="html/motors.html" class="collection-card">
+          <img src="Assets/motor1.jpg" alt="Motors" class="collection-card__img" />
+          <div class="collection-card__overlay">
+            <span class="collection-card__name">Motors</span>
+          </div>
+        </a>
+        <a href="html/stones.html" class="collection-card">
+          <img src="Assets/stones4.jpg" alt="Stones" class="collection-card__img" />
+          <div class="collection-card__overlay">
+            <span class="collection-card__name">Stones</span>
+          </div>
+        </a>
       </div>
-      <div class="block s2">
-        <a href="html/garden.html"
-          ><image
-            src="Assets/garden.jpg"
-            alt="garden"
-            width="240px"
-            height="230px"
-            >Gardens</image
-          ></a
-        >
+    </section>
+
+    <!-- ===== FEATURED PRODUCT ===== -->
+    <section class="section featured" id="featured">
+      <h2 class="section__title">Featured Product</h2>
+      <div class="featured__card glass-card">
+        <div class="featured__img-wrap">
+          <img src="Assets/full auqa setup.jpg" alt="Full Aquarium Setup" class="featured__img" />
+        </div>
+        <div class="featured__info">
+          <h3 class="featured__name">Full Aquarium Setup</h3>
+          <div class="featured__meta">
+            <span class="featured__tag">Size: M</span>
+            <span class="featured__tag featured__tag--green">In Stock</span>
+          </div>
+          <p class="featured__price">₹1,899 <span class="featured__price-note">only</span></p>
+          <a href="html/product.html" class="btn btn--primary btn--lg">Buy Now</a>
+        </div>
       </div>
-      <div class="block s3">
-        <a href="html/fishnet.html"
-          ><image
-            src="Assets/net.jpg"
-            alt="net"
-            width="240px"
-            height="230px"
-            >Fishnets</image
-          ></a
-        >
+    </section>
+
+    <!-- ===== VISIT SHOP ===== -->
+    <section class="section visit" id="visit">
+      <div class="visit__card glass-card">
+        <div class="visit__info">
+          <h2 class="visit__title">Visit Our Shop</h2>
+          <p class="visit__address">Near Tharamani Railway Station</p>
+          <p class="visit__phone">+91 93449 61585</p>
+          <p class="visit__city">Chennai — 600 001</p>
+          <a href="html/shops.html" class="btn btn--primary">Get Directions</a>
+        </div>
       </div>
-      <div class="block s4">
-        <a href="html/motors.html"
-          ><image
-            src="Assets/motor1.jpg"
-            alt="motor"
-            width="240px"
-            height="230px"
-            >Motors</image
-          ></a
-        >
+    </section>
+
+    <!-- ===== DISPATCH BANNER ===== -->
+    <section class="dispatch-banner">
+      <div class="dispatch-banner__inner">
+        <h2 class="dispatch-banner__title">⚡ 24 Hours Dispatch</h2>
+        <p class="dispatch-banner__text">We dispatch all orders within 24 hours or earlier</p>
       </div>
-      <div class="block s5">
-        <a href="html/stones.html"
-          ><image
-            src="Assets/stones4.jpg"
-            alt="stones"
-            width="240px"
-            height="230px"
-            >Stones</image
-          ></a
-        >
-      </div>
-    </div>
-    <br />
-    <h2 class="font">Featured Product:</h2>
-    <div class="container4">
-      <div class="product image">
-        <image
-          class="image1"
-          src="Assets/full auqa setup.jpg"
-          width="550px"
-        ></image>
-      </div>
-      <div class="product info">
-        <h4>Full Aquarium Setup</h4>
-        <p><strong>Size: </strong>M</p>
-        <p><strong>Stocks: </strong>Available</p>
-        <p>
-          <span class="price">Rs.1899 only</span>
-        </p>
-      </div>
-      <div class="product buy">
-        <a href="html/product.html" class="buy-button">Buy Now</a>
-      </div>
-    </div>
-    <h2 class="font">Visit Our Shop:</h2>
-    <div class="address">
-      <div class="details1">
-        <h1 id="H">Details:</h1>
-        <p>Near Tharamani RailWay Station,</p>
-        <p>+91 9344961585</p>
-        <p>Chennai.-600 001</p>
-        <a href="html/shops.html" class="button">Visit Our Shops</a>
-      </div>
-    </div>
-    <br />
-    <div class="dispatch">
-      <div class="dispatched d1">
-        <h1 id="hours">24 Hours Dispatch</h1>
-      </div>
-      <div class="dispatched d2">
-        <p>We Dispatch all Orders within 24 hours or Earlier</p>
-      </div>
-    </div>
-    <br />
+    </section>
+
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-      <div class="foot1">
-        <h1>About Aquarium.In</h1>
-        <p>Low price</p>
-        <p>High Quality</p>
-        <p>Long Life</p>
-        <p>&copy;.2025.Aquarium.&#174;</p>
-      </div>
-      <div class="foot2">
-        <p><a href="index.html">Home</a></p>
-        <p><a href="html/read1.html">Learn</a></p>
-        <p><a href="html/food.html">Products</a></p>
-        <p><a href="html/product.html">Featured Product</a></p>
-        <p><a href="html/shops.html">Contact Us</a></p>
-      </div>
-      <div class="foot3">
-        <h2>Get More Updated!</h2>
-        <h4>To Visit Our Online Pages</h4>
+      <div class="footer__inner">
+        <div class="footer__col footer__brand">
+          <h3 class="footer__logo-text">Aquarium.In</h3>
+          <p>Low Price</p>
+          <p>High Quality</p>
+          <p>Long Life</p>
+          <p class="footer__copy">&copy; 2025 Aquarium.&reg;</p>
+        </div>
+        <div class="footer__col footer__links">
+          <h4 class="footer__col-title">Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="html/read1.html">Learn</a>
+          <a href="html/food.html">Products</a>
+          <a href="html/product.html">Featured</a>
+          <a href="html/shops.html">Contact Us</a>
+        </div>
+        <div class="footer__col footer__social">
+          <h4 class="footer__col-title">Stay Updated</h4>
+          <p>Follow our socials for the latest drops and aquascaping tips.</p>
+        </div>
       </div>
     </footer>
+
   </body>
 </html>
